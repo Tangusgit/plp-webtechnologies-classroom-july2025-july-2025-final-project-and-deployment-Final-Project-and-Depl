@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tangus PCs | Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body class="products-page">
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tangus PCs</a>
+      <ul class="nav-links">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <!-- Page Title -->
+  <section class="page-title">
+    <h1>Our Products</h1>
+  </section>
+
+ <!-- Featured Product with 3D Model -->
+<section class="product-3d">
+  <h2>SKYTEC GAMING PC</h2>
+  <model-viewer src="/models/custom_gaming_pc.glb"
+    alt="Gaming Laptop"
+    camera-controls
+    exposure="1.2"
+    shadow-intensity="1"
+    environment-image="neutral"
+    ar
+    style="width: 600px; height: 400px;">
+  </model-viewer>
+  <p>Intel i7 · GTX 2060 · 16GB RAM · 1TB SSD</p>
+  
+  <button class="btn view-details">View Details</button>
+
+  <!-- Hidden Details -->
+  <div class="product-details hidden">
+    <p class="price">KSH. 87,000</p>
+    <label for="quantity0">Quantity:</label>
+    <input type="number" id="quantity0" min="1" value="1" />
+    <button class="btn">Add to Cart</button>
+  </div>
+</section>
+
+  <!-- Product Grid -->
+   <section class="product-grid">
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/81sHPv5jzgL._AC_SL1500_.jpg" alt="Custom PC" />
+    <h3>Panorama Gaming PC</h3>
+    <p>Ryzen 7 · RTX 4070 · 16GB RAM</p>
+    <button class="btn view-details">View Details</button>
+
+    <!-- Hidden Details -->
+    <div class="product-details hidden">
+      <p class="price">KSH. 140,000</p>
+      <label for="quantity1">Quantity:</label>
+      <input type="number" id="quantity1" min="1" value="1" />
+      <button class="btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/518dIk8IYlL._AC_SL1134_.jpg" alt="Laptop" />
+    <h3>Lenovo Legion 5 Pro</h3>
+    <p>Ryzen 7 5800H · RTX 3070 · 32GB RAM</p>
+    <button class="btn view-details">View Details</button>
+
+    <!-- Hidden Details -->
+    <div class="product-details hidden">
+      <p class="price">KSH. 90,000</p>
+      <label for="quantity2">Quantity:</label>
+      <input type="number" id="quantity2" min="1" value="1" />
+      <button class="btn">Add to Cart</button>
+    </div>
+  </div>
+</section>
+ 
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tangus PCs. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Files -->
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

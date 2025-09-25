@@ -1,90 +1,104 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# 💻 Tangus PCs – Multipage Website
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
-
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
-
----
-
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
-
-Before you write any code, take time to plan:
-
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
+Tangus PCs is a modern multipage website built to showcase custom gaming PCs and laptops.  
+It was created as part of a final web development assignment to demonstrate planning, structure, responsive design, interactivity, and deployment.
 
 ---
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
-
-Using your plan, begin building:
-
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+## 🌐 Live Demo
+👉 [View Site on Netlify](https://tangus-pcs.netlify.app)
 
 ---
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
-
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+## 📌 Purpose
+The website acts as a **product showcase and company site** for Tangus PCs, highlighting:
+- Custom-built gaming PCs and laptops
+- Services like PC building, upgrades, and repairs
+- About page with brand story
+- Contact form for customer inquiries
 
 ---
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+## 🗂️ Website Structure
+The site contains **5 main pages**:
 
-Once your project is complete, choose a method to **host your site online**.
+1. **Home (`index.html`)**  
+   - Hero banner with background image  
+   - Key features and call-to-action  
 
-You can use:
+2. **Products (`products.html`)**  
+   - Featured product with **3D interactive model viewer** (`.glb`)  
+   - Product grid with "View Details" interactivity  
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+3. **Services (`services.html`)**  
+   - Cards showing available services (repairs, upgrades, consulting)  
+   - Hover effects and animations  
 
-Deploy your project and confirm that:
+4. **About (`about.html`)**  
+   - Brand story presented with animated info cards  
+   - Stylish layout for company background  
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+5. **Contact (`contact.html`)**  
+   - Contact form with **JavaScript form validation**  
+   - User-friendly and responsive  
 
 ---
 
-## Outcome
+## 🛠️ Tech Stack
+- **HTML5** → semantic structure  
+- **CSS3** → responsive design, animations, hover effects  
+- **JavaScript (ES6)** → interactivity, form validation, dynamic product details  
+- **Model-Viewer** → 3D product visualization  
+- **Netlify** → hosting and deployment  
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+---
+
+## 📂 File Organization
+TangusPCs/
+│── index.html
+│── products.html
+│── services.html
+│── about.html
+│── contact.html
+│── README.md
+│
+├── css/
+│ └── style.css
+│
+├── js/
+│ └── main.js
+│
+├── images/
+│ └── hero-bg.jpg
+│ └── products-bg.jpg
+│ └── services-bg.jpg
+│ └── about-bg.jpg
+│ └── contact-bg.jpg
+│
+└── models/
+└── custom_gaming_pc
+
+
+---
+
+## ✨ Features
+- 🎨 **Responsive design** (works on desktop & mobile)  
+- 🖼️ **Background images per page**  
+- 🖱️ **Hover animations and transitions**  
+- 🛒 **Product detail toggle on click**  
+- 📩 **Form validation** (name, email, message required)  
+- 🎮 **3D interactive model viewer**  
+
+---
+
+## 🚀 Deployment
+This project is deployed on **Netlify**.  
+To deploy your own version:  
+1. Push the code to a GitHub repository  
+2. Connect the repo to [Netlify](https://www.netlify.com/)  
+3. Netlify will auto-build and give you a live URL  
+
+---
+
+## 👨‍💻 Author
+Created by **Tangus** as part of the Final Assignment Project (2025).  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tangus PCs | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="contact-page">
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tangus PCs</a>
+      <ul class="nav-links">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Please fill in the form below.</p>
+    </section>
+
+    <section class="contact-form">
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tangus PCs. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Files -->
+  <script src="js/main.js"></script>
+  <script>
+    // Form validation
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(event) {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (name === "" || email === "" || message === "") {
+        alert("⚠️ Please fill in all fields.");
+        event.preventDefault();
+      } else if (!email.includes("@") || !email.includes(".")) {
+        alert("⚠️ Please enter a valid email address.");
+        event.preventDefault();
+      } else {
+        alert("✅ Thank you! Your message has been sent.");
+      }
+    });
+  </script>
+</body>
+</html>
